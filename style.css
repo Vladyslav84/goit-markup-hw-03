@@ -118,6 +118,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--text-p);
 }
+.navigation-item.current{
+  color:var(--accent-color)
+}
 
 .modal-btn-header {
   display: flex;
@@ -166,6 +169,7 @@ a {
   color: #ffffff;
   background: #2196f3;
 }
+
 
 /*---header end---*/
 
