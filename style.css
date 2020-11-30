@@ -76,9 +76,9 @@ body {
 a {
   text-decoration: none;
 }
-a:visited.link-to-swith {
+/* a:visited.link-to-swith {
   color: #212121;
-}
+} */
 .navigation {
   font-family: var(--header-logo-lang);
 }
@@ -118,6 +118,7 @@ a:visited.link-to-swith {
   letter-spacing: 0.02em;
   color: var(--text-p);
 }
+
 .modal-btn-header {
   display: flex;
   margin: auto;
@@ -144,8 +145,8 @@ a:visited.link-to-swith {
 .adress-tel-header:focus,
 .footer-adress-map:hover,
 .footer-adress-map:focus,
-.navigation-item:hover,
-.navigation-item:focus,
+ /* .navigation-item:hover,
+.navigation-item:focus,  */
 .adress-tel-footer:hover,
 .adress-tel-footer:focus,
 .adress-mail-footer:hover,
@@ -411,4 +412,10 @@ a:visited.link-to-swith.studio {
 a:visited.adress-mail-footer,
 .adress-tel-footer {
   color: rgba(255, 255, 255, 0.6);
+}
+/* a:visited.link-to-swith {
+  color: #212121;
+} */
+.link-to-swith {
+  color: #212121;
 }
