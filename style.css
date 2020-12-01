@@ -17,8 +17,7 @@ h5,
 h6 {
   margin: 0;
 }
-ul,
-ol {
+ul,ol {
   margin: 0;
   padding: 0;
 }
@@ -26,9 +25,13 @@ ol {
 p {
   margin: 0;
 }
+/*Прибирає зайві паддінги в 4 hx*/
 img {
   display: block;
-}
+  max-width: 100%;
+  height: auto;
+} 
+/*overflow: hidden; приховує все, що витікає за межі бордера (бордера-радіуса)*/
 
 body {
   font-family: var(--main-lang);
