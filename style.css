@@ -26,11 +26,13 @@ ol {
 p {
   margin: 0;
 }
+/*Прибирає зайві паддінги в 4 hx*/
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/*overflow: hidden; приховує все, що витікає за межі бордера (бордера-радіуса)*/
 
 body {
   font-family: var(--main-lang);
@@ -126,6 +128,9 @@ a {
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--text-p);
+}
+.navigation-item.current {
+  color: var(--accent-color);
 }
 
 .modal-btn-header {
