@@ -28,6 +28,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -41,30 +43,36 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
+
 .conteiner.portfolio {
-  width: 1170px;
+  width: 1200px;
 }
 /*---header--*/
-.header {
-  outline-color: #be8b5e;
-}
 
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header.conteiner {
   display: flex;
-  align-items: flex-end;
 }
 .navigation {
   display: flex;
+  align-items: baseline;
 }
 .navigation-menu {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .navigation-link {
   margin-right: 93px;
+  align-items: baseline;
 }
 
 .header-adress {
@@ -73,6 +81,7 @@ body {
 .adress-tel-header {
   margin-left: 50px;
 }
+
 a {
   text-decoration: none;
 }
@@ -120,15 +129,15 @@ a {
 }
 
 .modal-btn-header {
-  display: flex;
+  display: block;
   margin: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   min-width: 200px;
-  left: 700px;
-  top: 430px;
+  /* left: 700px;
+  top: 430px; */
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -170,6 +179,10 @@ a {
 /*---header end---*/
 
 /*---section-hero---*/
+.section-hero {
+  width: 1600px;
+}
+
 .adress-mail-header,
 .adress-tel-header {
   font-family: "Roboto", sans-serif;
@@ -181,20 +194,18 @@ a {
   color: #757575;
 }
 .section-h1 {
-  margin-bottom: 12px;
-  margin: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  /* color: #ffffff; */
-}
-
-.section-hero {
+  padding-bottom: 30px;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px;
+  justify-content: center;
+  /* color: #ffffff; */
 }
 
 .links-list-item {
