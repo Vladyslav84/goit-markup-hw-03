@@ -6,36 +6,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+rel="stylesheet">
 </head>
 <body>
         <!--Header-->
-      
+
             <header class="header">
-                <nav class="navigation">
-                    <a href="#" class="navigation-link"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
-                    <ul class="navigation-menu">
-                        <li class="navigation-item"><a href="#" class="link-to-swith studio current">Студия</a></li>
-                        <li class="navigation-item"><a href="./portfolio.html" class="link-to-swith">Портфолио</a></li>
-                        <li class="navigation-item"><a href="#" class="link-to-swith">Контакты</a></li>
-                    </ul>
-                </nav>
-                <address class="header-adress">
-                    <a class="adress-mail-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    <a class="adress-tel-header" href="tel:+380961111111"> +38 096 111 11 11</a>
-                </address>
+                <div class="navigation-adress conteiner">
+                    <nav class="navigation">
+                        <a href="#" class="navigation-link"><span
+class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
+                        <ul class="navigation-menu">
+                            <li class="navigation-item"><a href="#"
+class="link-to-swith studio current">Студия</a></li>
+                            <li class="navigation-item"><a
+href="./portfolio.html" class="link-to-swith">Портфолио</a></li>
+                            <li class="navigation-item"><a href="#"
+class="link-to-swith">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="header-adress">
+                        <a class="adress-mail-header"
+href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="adress-tel-header"
+href="tel:+380961111111"> +38 096 111 11 11</a>
+                    </address>
+                </div>
             </header>
-                
+
     <!--main section-->
     <main>
         <!--HERO-->
-         <section>
-                    <h1 class="section-h1"> эффективные решения <br> для вашего бизнеса</h1>
-                    <button class="modal-btn-header" type="button">Заказать услугу</button>
-                
+         <section class="section-hero">
+                    <div class="section-h1-modal-btn">
+                        <h1 class="section-h1"> эффективные решения
+<br> для вашего бизнеса</h1>
+                        <button class="modal-btn-header"
+type="button">Заказать услугу</button>
+                    </div>
+
          </section>
                 <!--benefits-->
         <div class="conteiner">
@@ -43,45 +57,49 @@
                 <h2 class="benefits-h2" hidden> Benefits</h2>
                 <ul class="benefits-list">
                     <li class="benefits-list-item">
+                        <img src="./imagine/Rectangle2.svg" width="270" alt="антена"/>
                         <h3 class="benefits-h2"> Внимание к деталям</h3>
-                        <P class="benefits-p"> Идейные соображения, а также начало повседневной работы по формированию позиции. </P>
+                        <P class="benefits-p"> Идейные соображения, атакже начало повседневной работы по формированию позиции. </P>
                     </li>
                     <li class="benefits-list-item">
+                        <img src="./imagine/Rectangle2.svg" width="270" alt="годинник"/>
                         <h3 class="benefits-h2"> Пунктуальность</h3>
-                        <P class="benefits-p"> Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        <P class="benefits-p"> Задача организации, вособенности же рамки и место обучения кадров влечет за собой.
                         </P>
                     </li>
                     <li class="benefits-list-item">
+                        <img src="./imagine/Rectangle2.svg" width="270" alt="комп"/>
                         <h3 class="benefits-h2">Планирование</h3>
-                        <P class="benefits-p"> Равным образом консультация с широким активом в значительной степени обуславливает.
+                        <P class="benefits-p"> Равным образомконсультация с широким активом в значительной степени обуславливает.
                         </P>
                     </li>
                     <li class="benefits-list-item">
+                        <img src="./imagine/Rectangle2.svg" width="270" alt="космонавт"/>
                         <h3 class="benefits-h2"> Современные технологии</h3>
-                        <P class="benefits-p"> Значимость этих проблем настолько очевидна, что реализация плановых заданий.</P>
+                        <P class="benefits-p"> Значимость этих проблемнастолько очевидна, что реализация плановых заданий.</P>
                     </li>
                 </ul>
             </section>
         </div>
 
         <!-- what we doing-->
-        <div class="conteiner">
-            <section class="what-we-doing">
-                <h2 class="what-we-doing-h2">Чем мы занимаемся</h2>
-                <ul class="what-we-doing-img-list">
-                    <li class="what-we-doing-img"><img src="./imagine/box1.jpg" width="370" alt="людина працює за компом"></li>
-                    <li class="what-we-doing-img"><img src="./imagine/box2.jpg"" width=" 370"
-                            alt="людина працює за компом і з телефоном"></li>
-                    <li class="what-we-doing-img"><img src="./imagine/box3.jpg"" width=" 370" alt="людина працює з планшетом"></li>
-                </ul>
-            
-            </section>
-        </div>
-        <!--Team-->
-       <div class="conteiner">
+        <section>
+                <div class="what-we-doing conteiner">
+                    <h2 class="what-we-doing-h2">Чем мы занимаемся</h2>
+                    <ul class="what-we-doing-img-list">
+                        <li class="what-we-doing-img"><img src="./imagine/box1.jpg" width="370" alt="людина працює закомпом"></li>
+                        <li class="what-we-doing-img"><img src="./imagine/box2.jpg"" width=" 370"
+                                alt="людина працює за компом і зтелефоном"></li>
+                        <li class="what-we-doing-img"><img src="./imagine/box3.jpg"" width=" 370" alt="людина працює з планшетом"></li>
+                    </ul>
+                </div>
+        </section>
+               <!--Team-->
+       
             <section class="team">
                 <h2 class="our-team">Наша команда</h2>
-                <ul class="our-team-list">
+                <div class="div-our-team conteiner">
+                 <ul class="our-team-list">
                     <li class="our-team-img"><img src="./imagine/img1.jpg" width="270" alt="фото Игоря Демьяненко">
                         <h3 class="our-team-h3"> Игорь Демьяненко</h3>
                         <p class="our-team-p" lang="en">Designer</P>
@@ -99,24 +117,53 @@
                         <p class="our-team-p" lang="en">Designer</p>
                     </li>
                 </ul>
+            </div>
             </section>
-       </div>
+            <!-- regular client -->
+            <section class="regular-client">
+                 <h3 class="our-team"> Постоянные клиенты</h3>
+                <ul class="regular-client-logo conteiner">
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого Ya end Co" width="170" height="90"></a>
+                    </li>
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого company" width="170" height="90"></a>
+                    </li>
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого company" width="170" height="90"></a>
+                    </li>
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого foster peters" width="170" height="90"></a>
+                    </li>
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого brand" width="170" height="90"></a>
+                    </li>
+                    <li class="regular-client-img"><a href="#"><img src="./imagine/Rectangle9.svg" alt="лого tag line" width="170" height="90"></a>
+                    </li>
+                </ul>
+            </section>
+       
     </main>
 
     <!--Footer-->
-    <div class="conteiner">
-        <footer class="footere">
-            <a href="#" class="navigation-link footer"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
-            <address class="footer-adress">
-                <a class="footer-adress-map" href="https://goo.gl/maps/pfqSpMcwWY89Kn897" target="_blank"
-                    rel="nofollow noopener">г.
-                    Киев, пр-т Леси Украинки, 26</a>
-                <a class="adress-mail-footer" href="mailto:info@example.com">info@example.com</a>
-                <a class="adress-tel-footer" href="tel:+380991111111">+38 099 111 11 11</a>
-            </address>
+            <footer class="footer" >
+                <div class="all-footer conteiner">
+                    <div class="logo-adress">
+                        <a href="#" class="navigation-link footer"><span class="logo-blue">Web</span><span class="logo-white">Studio</span></a>
+                        <address class="footer-adress"> <a class="footer-adress-map" href="https://goo.gl/maps/pfqSpMcwWY89Kn897" target="_blank"
+                                rel="nofollow noopener">г.Киев, пр-т Леси Украинки, 26</a>
+                            <a class="adress-mail-footer" href="mailto:info@example.com">info@example.com</a>
+                            <a class="adress-tel-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </address>
+                       </div>
+                        <div class="social-link-b">
+                        <b class="appeal">присоединяйтесь</b>
+                        <ul class="social-item">
+                            <li>ins</li>
+                            <li>twitter</li>
+                            <li>facebook</li>
+                            <li>in</li>
+                        </ul>
+                        </div>
+                </div>
+                
         </footer>
-    </div>
-
+    
 
  </body>
 

@@ -53,12 +53,17 @@ body {
   width: 1200px;
 }
 /*---header--*/
-
-.header {
+.navigation-adress {
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.header {
+  width: 1600px;
 }
 
 .header.conteiner {
@@ -66,7 +71,6 @@ body {
 }
 .navigation {
   display: flex;
-  align-items: baseline;
 }
 .navigation-menu {
   display: flex;
@@ -79,6 +83,7 @@ body {
 
 .header-adress {
   margin-left: auto;
+  align-items: center;
 }
 .adress-tel-header {
   margin-left: 50px;
@@ -141,9 +146,7 @@ a {
   font-size: 16px;
   line-height: 1.875;
   min-width: 200px;
-  /* left: 700px;
-  top: 430px; */
-  background: #2196f3;
+    background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
@@ -152,15 +155,14 @@ a {
   padding: 10px 32px;
 }
 
-/* Це спеціально зроблено. Я знаю, що можно було в один клас, але мені так поки більш зрозуміло */
+/* Це спеціально зроблено. Я знаю, що можно було в один клас, але мені
+так поки більш зрозуміло */
 .adress-mail-header:hover,
 .adress-mail-header:focus,
 .adress-tel-header:hover,
 .adress-tel-header:focus,
 .footer-adress-map:hover,
 .footer-adress-map:focus,
- /* .navigation-item:hover,
-.navigation-item:focus,  */
 .adress-tel-footer:hover,
 .adress-tel-footer:focus,
 .adress-mail-footer:hover,
@@ -186,6 +188,7 @@ a {
 /*---section-hero---*/
 .section-hero {
   width: 1600px;
+  display: block;
 }
 
 .adress-mail-header,
@@ -199,6 +202,7 @@ a {
   color: #757575;
 }
 .section-h1 {
+  margin: 0 15px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -228,12 +232,17 @@ a {
   border: 0;
   cursor: pointer;
 }
+.benefits-list-item:not(:last-child) {
+  margin-right: 30px;
+  min-width: 270px;
+}
 
 /*---section-hero end---*/
 /*---section-benefits---*/
-.benefits-list-item:not(:last-child) {
-  margin-right: 50px;
-  min-width: 250px;
+
+.what-we-doing {
+  padding-top: 94px;
+  display: block;
 }
 .what-we-doing-img-list {
   display: flex;
@@ -246,6 +255,8 @@ a {
   display: flex;
 }
 .benefits-h2 {
+  min-width: 270px;
+  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -266,13 +277,33 @@ a {
 /*what we doing*/
 .what-we-doing {
   padding-bottom: 200px;
+  
 }
 .what-we-doing-h2 {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  min-width: 376px;   
+font-weight: 700;
+font-size: 36px;
+line-height: 1.166;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
 }
 .what-we-doing-img:not(:last-child) {
   margin-right: 30px;
+}
+
+/*what we doing end*/
+
+/*Team*/
+.team{
+  width: 1600px;
+  background: #F5F4FA;
+  
 }
 .our-team {
   font-weight: 700;
@@ -282,15 +313,21 @@ a {
   letter-spacing: 0.03em;
   color: var(--text-p);
 }
-/*what we doing end*/
-
-/*Team*/
 .our-team-list {
   display: flex;
+  justify-content: center;
+}
+.div-our-team{
+  padding-bottom: 94px;
 }
 .our-team {
-  margin-top: 94px;
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+}
+.our-team-img{
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
 }
 .our-team-img:not(:last-child) {
   margin-right: 30px;
@@ -313,11 +350,27 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.team {
-  padding-bottom: 60px;
-}
 
 /*team-end--*/
+.regular-client-img:not(:last-child) {
+  margin-right: 30px;
+  min-width: 170px;
+}
+/* regular cliens */
+.regular-client{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-client-img{
+ border: 1px solid #AFB1B8;
+border-radius: 4px;
+cursor: pointer;
+}
+.regular-client-img:focus,
+.regular-client-img:hover {
+color: var(--accent-color);
+} 
+
 /*footer*/
 .footer-adress-map {
   font-style: normal;
@@ -349,10 +402,44 @@ a {
 .adress-mail-footer {
   margin-bottom: 9px;
 }
-.footere {
+.footer {
   flex-grow: 1;
+  width: 1600px;
+  background-color: #2F303A;
 }
+.logo-adress{
+padding-top: 60px;
+margin-right: 70px;
 
+}
+.logo-white {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.appeal{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.142;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.social-link-b{
+  padding-top: 72px;
+  
+}
+.all-footer{
+display: flex;
+align-items:baseline;
+}
+.social-item{
+  display: flex;
+  margin-top: 20px;
+}
 /*footer end*/
 
 /* Portfolio */
