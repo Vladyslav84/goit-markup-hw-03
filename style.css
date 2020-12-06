@@ -63,8 +63,8 @@ body {
 }
 
 .header {
-  width: 1600px;
-}
+  max-width: 1600px;
+  }
 
 .header.conteiner {
   display: flex;
@@ -140,7 +140,7 @@ a {
 
 .modal-btn-header {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -186,10 +186,23 @@ a {
 /*---header end---*/
 
 /*---section-hero---*/
-.section-hero {
+.hero-foto{
+  background: linear-gradient( to right, red );
   width: 1600px;
-  display: block;
+  height: 600px;
+ 
 }
+
+.section-hero {
+  padding-top: 200px;
+   padding-bottom: 200px;
+  outline: auto;
+  max-width: 1600px;
+   margin-left: auto;
+  margin-right: auto;
+  display: block;
+    
+} 
 
 .adress-mail-header,
 .adress-tel-header {
@@ -202,18 +215,15 @@ a {
   color: #757575;
 }
 .section-h1 {
-  margin: 0 15px;
+  margin: 0 auto;
+  min-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 30px;
-  padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
-  justify-content: center;
+      justify-content: center;
   /* color: #ffffff; */
 }
 
@@ -243,7 +253,7 @@ a {
 .what-we-doing {
   padding-top: 94px;
   display: block;
-}
+  }
 .what-we-doing-img-list {
   display: flex;
 }
@@ -301,7 +311,7 @@ color: #212121;
 
 /*Team*/
 .team{
-  width: 1600px;
+  max-width: 1600px;
   background: #F5F4FA;
   
 }
@@ -404,7 +414,7 @@ color: var(--accent-color);
 }
 .footer {
   flex-grow: 1;
-  width: 1600px;
+  max-width: 1600px;
   background-color: #2F303A;
 }
 .logo-adress{
@@ -444,7 +454,7 @@ align-items:baseline;
 
 /* Portfolio */
 .portfolio-main{
-  width: 1600px;
+  max-width: 1600px;
 }
 .links-list {
   display: flex;
