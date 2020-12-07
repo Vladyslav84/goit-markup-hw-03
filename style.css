@@ -189,19 +189,19 @@ a {
 .hero-foto{
   background: linear-gradient( to right, red );
   width: 1600px;
-  height: 600px;
- 
-}
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./imagine/Imgfirstfoto\ \(1\).jpg);
+  margin-top: 0 auto;
+  background-color: black;
+ }
 
 .section-hero {
   padding-top: 200px;
    padding-bottom: 200px;
-  outline: auto;
-  max-width: 1600px;
+    max-width: 1600px;
    margin-left: auto;
   margin-right: auto;
   display: block;
-    
+     
 } 
 
 .adress-mail-header,
@@ -249,7 +249,28 @@ a {
 
 /*---section-hero end---*/
 /*---section-benefits---*/
-
+.benefits-list-item::before{
+    width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.benefits-list-item.icon-antena::before{
+  background-image: url(./imagine/antenna1.svg);
+}
+.benefits-list-item.icon-clock::before{
+  background-image: url(./imagine/clock1.svg);
+}
+.benefits-list-item.icon-diagram::before{
+  background-image: url(./imagine/diagram1.svg);
+}
+.benefits-list-item.icon-astronaut::before{
+  background-image: url(./imagine/astronaut1.svg);
+}
 .what-we-doing {
   padding-top: 94px;
   display: block;
@@ -367,19 +388,42 @@ border-radius: 0px 0px 4px 4px;
   min-width: 170px;
 }
 /* regular cliens */
+.regular-client-img::before{
+width: 170px;
+height: 90px;
+display: block;
+content: "";
+background-color: #E5E5E5;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+}
+.regular-client-img.logo1::before{
+  background-image: url(./imagine/logo1.svg);
+}
+.regular-client-img.logo2::before{
+  background-image: url(./imagine/logo2.svg);
+}
+.regular-client-img.logo3::before{
+  background-image: url(./imagine/logo3.svg);
+}
+.regular-client-img.logo4::before{
+  background-image: url(./imagine/logo4.svg);
+  color: AFB1B8;
+}
+.regular-client-img.logo5::before{
+  background-image: url(./imagine/logo5.svg);
+}
+.regular-client-img.logo6::before{
+  background-image: url(./imagine/logo6.svg);
+}
 .regular-client{
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.regular-client-img{
- border: 1px solid #AFB1B8;
-border-radius: 4px;
-cursor: pointer;
-}
-.regular-client-img:focus,
-.regular-client-img:hover {
-color: var(--accent-color);
-} 
+
 
 /*footer*/
 .footer-adress-map {
