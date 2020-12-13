@@ -59,6 +59,7 @@ body {
   align-items: center;
 }
 .header-portfolio {
+  /* position: relative; */
   max-width: 1600px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -66,6 +67,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 .header {
+  /* position: relative; */
   padding-top: 25px;
   padding-bottom: 25px;
   margin: auto;
@@ -90,10 +92,26 @@ body {
   fill: #757575;
   fill: currentColor;
 }
-.header-adress-icon:hover,
-.header-adress-icon:focus {
-  fill: #2196f3;
-  }
+.navigation-item .current::after{
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  display: block;
+  content: "";
+  background:var(--accent-color);
+  border-radius: 2px;
+}
+.header-portfolio .navigation-item .current::after{
+  position: absolute;
+  bottom: 0;
+  width: 78px;
+  height: 4px;
+  display: block;
+  content: "";
+  background:var(--accent-color);
+  border-radius: 2px;
+
+}
 
 .header-adress {
   margin-left: auto;
@@ -152,13 +170,6 @@ a {
 }
 .navigation-item.current {
   color: var(--accent-color);
-}
-.link-to-swith studio::after{
-  width: 270px;
-  height: 120px;
-  display: block;
-  content: "";
-
 }
 
 .modal-btn-header {
@@ -342,7 +353,36 @@ a {
 }
 /*---section-benefits- end--*/
 
+
+.pqqqqqq{
+  position: relative;
+}
+
+.portfolio-overlay{
+  position: absolute;
+  bottom: 0;
+}
+
 /*what we doing*/
+.overlay{
+  position: relative;
+  } 
+   .desktop-app{
+  position: absolute;
+  padding: 27px 53px;
+   width: 100px;
+  height: 100px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+
+}
 .what-we-doing-h2 {
   margin-bottom: 50px;
   display: flex;
