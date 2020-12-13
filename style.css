@@ -88,11 +88,12 @@ body {
 .header-adress-icon {
   margin-right: 10px;
   fill: #757575;
+  fill: currentColor;
 }
 .header-adress-icon:hover,
 .header-adress-icon:focus {
   fill: #2196f3;
-}
+  }
 
 .header-adress {
   margin-left: auto;
@@ -152,6 +153,13 @@ a {
 .navigation-item.current {
   color: var(--accent-color);
 }
+.link-to-swith studio::after{
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+
+}
 
 .modal-btn-header {
   display: block;
@@ -173,8 +181,7 @@ a {
 
 /* Це спеціально зроблено. Я знаю, що можно було в один клас, але мені
 так поки більш зрозуміло */
-.adress-mail-header:hover,
-.adress-mail-header:focus,
+ .adress-mail-header:hover,
 .adress-tel-header:hover,
 .adress-tel-header:focus,
 .footer-adress-map:hover,
@@ -184,7 +191,8 @@ a {
 .adress-mail-footer:hover,
 .adress-mail-footer:focus {
   color: var(--accent-color);
-}
+  
+ }
 .navigation-item.current:hover,
 .navigation-item.current:focus,
 .link-to-swith:hover,
@@ -200,7 +208,10 @@ a {
 }
 
 /*---header end---*/
-
+/* --main-section-- */
+.section-main{
+  padding-bottom: 94px;
+}
 /*---section-hero---*/
 .hero-foto {
   max-width: 1600px;
@@ -411,7 +422,8 @@ a {
 .our-team-socil-item {
   display: block;
   fill: #757575;
-}
+  }
+
 .li-class {
   padding: 12px 12px;
   border-radius: 50%;
@@ -419,7 +431,10 @@ a {
 .our-team-socil-item:hover {
   fill: #ffffff;
 }
-.li-class:hover {
+.li-class:hover .our-team-socil-item{
+  fill: white;
+}
+.li-class:hover{
   background-color: var(--accent-color);
 }
 .li-class:not(:last-child) {
@@ -438,14 +453,10 @@ a {
 /*team-end--*/
 
 /* regular cliens */
-.svg-logo1:hover
- {
-  fill: #2196f3;
-}
+
 .regular-client {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
+  }
 .regular-client-div {
   display: block;
 }
@@ -458,6 +469,24 @@ a {
 }
 .regular-client-img:hover {
   border: 1px solid #2196f3;
+}
+.regular-client-img:hover .svg-logo1{
+  fill: var(--accent-color);
+}
+.regular-client-img:hover .svg-logo2{
+  fill: var(--accent-color);
+}
+.regular-client-img:hover .svg-logo3{
+  fill: var(--accent-color);
+}
+.regular-client-img:hover .svg-logo4{
+  fill: var(--accent-color);
+}
+.regular-client-img:hover .svg-logo5{
+  fill: var(--accent-color);
+}
+.regular-client-img:hover .svg-logo6{
+  fill: var(--accent-color);
 }
 .regular-client-img {
   width: 170px;
